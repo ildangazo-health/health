@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +14,9 @@
         android:supportsRtl="true"
         android:usesCleartextTraffic="true"
         android:theme="@style/Theme.HelloAndroid">
-
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAnGySxP08NBlvL5-PToKgw6zCRHJoKQyA"/>
         <activity
             android:name=".HomeActivity"
             android:exported="true"
@@ -53,9 +54,8 @@
         <activity android:name=".InputCheckup2Activity"></activity>
         <activity android:name=".InputCheckup3Activity"></activity>
 
-        <activity android:name=".ChecklistActivity"></activity>
+        <activity android:name=".MapActivity"></activity>
 
         <meta-data android:name="android.max_aspect" android:value="2.1" />
     </application>
-
 </manifest>
